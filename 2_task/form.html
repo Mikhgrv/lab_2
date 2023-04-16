@@ -10,16 +10,46 @@
     <div class = "main" style = "width: 500px;">
         <h1>Лабораторна робота 2</h1>
         <h2>Форма</h2>
-    <div class = "info">
-        <p class="green">About me</p>
-        <form >
-            <label >Ім'я:</label><br>
-            <input type="text" style="width: 30%;"><br>
-            <label >Прізвище:</label><br>
-            <input type="text">
+        <hr size="5" width="95%" color="blue">
+    <div class = "info" style="margin-top: 20px;">
+        <p class="green">Про мене:</p>
+        <form action="php_get.php" method="get" id="form" style="margin-bottom: 20px;" >
+            <label style ="margin:10px; margin-right:150px" class="link" >Ім'я:</label>
+            <input type="text" name="name" style="width:45%;"><br>
+            <label style ="margin:10px; margin-right:95px;" class="link" >Прізвище:</label>
+            <input type="text" name="surname" style="width:45%; margin-bottom: 50px;"><br>
+        <p class="green">Про смартфон:</p>
+            <label style ="margin:10px; margin-right:93px" class="link" >Виробник:</label>
+            <select id="company" name="com"  style="width:45%;">
+                <option value="Iphone">Iphone</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Motorola">Motorola</option>
+                <option value="Xiaomi">Xiaomi</option>
+            </select><br>
+            <label style ="margin:10px; margin-right:20px;" class="link" >Рік виробництва:</label>
+            <select id="year" name="year" size="1" style="width:45%;" multiple>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select><br><br>
+            <label style ="margin:10px; margin-right:81px" class="link" >Вже розбитий:</label>
+            <input type="checkbox" name ="damaged" value="A"><br>
+            <label style ="margin:10px; margin-right:95px;" class="link" >Пора міняти:</label>
+            <input type="checkbox" name ="change" value="B"><br>    
         </form>
     </div>
-        
+    <hr size="5" width="95%" color="blue">
+    <div class = "center">
+        <button type="submit" form="form" value="OK" style="font-size: 21px; color: rgb(0, 114, 76);">OK !</button>
+        <button type="submit" value="cancel" style="font-size: 21px; color: rgb(156, 0, 0);">Cancel</button>
+    </div>    
     </div>
+
 </body>
 </html>

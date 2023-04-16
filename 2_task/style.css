@@ -64,4 +64,8 @@ h2 {
     clear: left;
 }
 
-
+.center {
+    width: 34%;
+    margin: auto;
+    padding: 10px;
+  }
